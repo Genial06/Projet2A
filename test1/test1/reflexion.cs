@@ -1,0 +1,65 @@
+using System;
+using System.Reflection;
+using System.Linq;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
+namespace test1
+{
+	public class reflexion
+	{
+		private static Type t = typeof(PersonneTest);
+			
+		public static string NomClasse() {
+		string className = t.Name;
+		return className;
+		}
+		
+		public static List<string> listAttributes(){
+		
+		List<string> list = t.GetFields(BindingFlags.Instance
+                            	|BindingFlags.NonPublic|BindingFlags.Public)
+									.Select(field => field.Name).ToList();
+		List<string> cleanedList = new List<string>();
+		Regex  myRegex = new Regex(@"<([\w]+)>");
+			
+			foreach (string j in list)
+				{
+				Match m = myRegex.Match(j);
+				if(myRegex.IsMatch(j))
+					cleanedList.Add(m.Groups[1].Value);
+				}	
+			return cleanedList;
+		}
+		public static List<string> listMethods() {
+			List<string> l = new List<string>();
+			foreach(MemberInfo Mi in t.GetMembers())
+		    {
+	             if (Mi.MemberType == MemberTypes.Method)
+				 l.Add(Mi.ToString());
+			}
+			return l;
+		}
+		public static List<string> listChamps() {
+			List<string> l = new List<string>();
+			foreach(MemberInfo Mi in t.GetMembers())
+		    {
+	             if (Mi.MemberType == MemberTypes.Field)
+				 l.Add(Mi.ToString());
+			}
+			return l;
+		}
+		public static List<string> listConstructor() {
+			List<string> l = new List<string>();
+			foreach(MemberInfo Mi in t.GetMembers())
+		    {
+	             if (Mi.MemberType == MemberTypes.Constructor)
+				 l.Add(Mi.ToString());
+			}
+			return l;
+		}
+	}
+	
+		}
+	
+
