@@ -19,6 +19,12 @@ namespace test1 {
 		
 		protected System.Web.UI.WebControls.Button buttonBegin;
 		
+		protected System.Web.UI.HtmlControls.HtmlForm form30;
+		
+		protected System.Web.UI.WebControls.TextBox TextboxProjet;
+		
+		protected System.Web.UI.WebControls.Button buttonProjet;
+		
 		protected System.Web.UI.HtmlControls.HtmlForm form20;
 		
 		protected System.Web.UI.WebControls.TextBox TextboxStart;

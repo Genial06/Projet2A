@@ -18,6 +18,14 @@ namespace test1
 			
 		}
 		
+		public virtual void buttonProjetClicked (object sender, EventArgs args)
+		{
+			System.Console.Write(TextboxProjet.Text);
+			string s = TextboxProjet.Text;
+			AfficherClasses(s);
+			
+		}
+		
 		public virtual void buttonStartClicked (object sender, EventArgs args)
 		{
 			System.Console.Write(TextboxStart.Text);
@@ -60,6 +68,18 @@ namespace test1
 			
 		}
 		
+		public virtual void AfficherClasses(string s)
+		{
+			Response.Write("Liste des classes du projet :");
+			List<string> l = reflexion.GetClasses(s);
+			Response.Write("<ul>");
+			foreach (string j in l)
+				{
+				    Response.Write(string.Format ("<li> {0} </li>",j));
+				}	
+				 Response.Write("</ul>");
+		}
+		
 		public virtual void AfficherClassName() 
 		{ 	
 			Response.Write("Nom de la classe :");
@@ -90,7 +110,8 @@ namespace test1
     	  System.Console.Write("oui");
    		}
 		
-		public virtual void AfficherMethods(){
+		public virtual void AfficherMethods()
+		{
 			Response.Write("Liste de Methodes :");
 			List<string> l = reflexion.listMethods();
 			Response.Write("<ul>");
@@ -100,7 +121,8 @@ namespace test1
 			}
 			Response.Write("</ul>");
 		}
-			public virtual void AfficherChamps(){
+			public virtual void AfficherChamps()
+		{
 			Response.Write("Liste de Champs :");
 			List<string> l = reflexion.listChamps();
 			Response.Write("<ul>");
@@ -110,7 +132,8 @@ namespace test1
 			}
 			Response.Write("</ul>");
 		}
-		public virtual void AfficherConstructor(){
+		public virtual void AfficherConstructor()
+		{
 			Response.Write("Liste de Constructeur :");
 			List<string> l = reflexion.listConstructor();
 			Response.Write("<ul>");

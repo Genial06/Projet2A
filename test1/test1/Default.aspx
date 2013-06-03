@@ -44,6 +44,12 @@
 			<asp:Button id="buttonBegin" Text="begin" OnClick="buttonBeginClicked" runat="server"/>
 		</form>			
 		
+		<form id="form30" runat="server">
+			<% Response.Write("Rentrer le nom du projet :"); %>
+			<asp:TextBox id="TextboxProjet"  runat="server"/>
+			<asp:Button id="buttonProjet" Text="StartProjet" OnClick="buttonProjetClicked" runat="server"/>
+		</form>
+		
 		<form id="form20" runat="server">
 			<% Response.Write("Rentrer le nom de la classe :"); %>
 			<asp:TextBox id="TextboxStart"  runat="server"/>
@@ -53,6 +59,7 @@
 		<form id="form22" runat="server">
 		<% if (TextboxStart.Text == "PersonneTest") 
 			 {	
+			 	//AfficherClasses();
 			 	AfficherClassName();  
 				AfficherAttributes();  
 				AfficherMethods();	   
