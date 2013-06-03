@@ -11,6 +11,9 @@ namespace test1
 	public partial class Default : System.Web.UI.Page
 	{	
 		public static string fichier;
+		public static string projetName = "";
+		public static string className = "";
+		
 		public virtual void buttonBeginClicked (object sender, EventArgs args)
 		{
 			System.Console.Write(TextboxBegin.Value);
@@ -21,14 +24,19 @@ namespace test1
 		public virtual void buttonProjetClicked (object sender, EventArgs args)
 		{
 			System.Console.Write(TextboxProjet.Text);
-			string s = TextboxProjet.Text;
-			AfficherClasses(s);
+			projetName = TextboxProjet.Text;
+			
+			//AfficherClasses(projetName);
+			
 			
 		}
 		
 		public virtual void buttonStartClicked (object sender, EventArgs args)
 		{
 			System.Console.Write(TextboxStart.Text);
+			className = TextboxStart.Text;
+			
+			reflexion.setGetType(projetName,className);
 			
 		}
 		
@@ -42,42 +50,39 @@ namespace test1
 		}
 		public virtual void button2Clicked (object sender, EventArgs args)
 		{
-			object val = ViewState["ButtonClickCount2"];
-		    int i = (val == null)? 1 : (int)val + 1;
-		    outputlabel2.Text = string.Format ("You red {0} {1}", i, i==1?"time":"times");
-		    ViewState["ButtonClickCount2"] = i;
+//			object val = ViewState["ButtonClickCount2"];
+//		    int i = (val == null)? 1 : (int)val + 1;
+//		    outputlabel2.Text = string.Format ("You red {0} {1}", i, i==1?"time":"times");
+//		    ViewState["ButtonClickCount2"] = i;
 			
 		}
 		
 		
 		public virtual void button3Clicked (object sender, EventArgs args)
 		{
-			object val = ViewState["ButtonClickCount3"];
-		    int i = (val == null)? 1 : (int)val + 1;
-		    outputlabel3.Text = string.Format ("You updated {0} {1}", i, i==1?"time":"times");
-		    ViewState["ButtonClickCount3"] = i;
+//			object val = ViewState["ButtonClickCount3"];
+//		    int i = (val == null)? 1 : (int)val + 1;
+//		    outputlabel3.Text = string.Format ("You updated {0} {1}", i, i==1?"time":"times");
+//		    ViewState["ButtonClickCount3"] = i;
 			
 		}
-		public virtual void button4Clicked (object sender, EventArgs args)
-		{
-		    outputlabel4.Text = string.Format ("pas encore codé");
-		}
-		public virtual void button5Clicked (object sender, EventArgs args)
-		{
-			
-			
-		}
+	
 		
 		public virtual void AfficherClasses(string s)
 		{
-			Response.Write("Liste des classes du projet :");
-			List<string> l = reflexion.GetClasses(s);
-			Response.Write("<ul>");
-			foreach (string j in l)
-				{
-				    Response.Write(string.Format ("<li> {0} </li>",j));
-				}	
-				 Response.Write("</ul>");
+			if (projetName != "")
+			{	
+				Response.Write("Liste des classes du projet :");
+				List<string> l = reflexion.GetClasses(s);
+				Response.Write("<ul>");
+				foreach (string j in l)
+					{
+					    Response.Write(string.Format ("<li> {0} </li>",j));
+					}	
+					 Response.Write("</ul>");
+			}
+			else
+				Response.Write("");
 		}
 		
 		public virtual void AfficherClassName() 
@@ -155,4 +160,22 @@ namespace test1
 //		<form>
 //			<input type="file">
 //			</input>
-//		</form> 
+//		</form>
+
+	
+//		<form id="form22" runat="server">
+//		<% if (TextboxStart.Text == "PersonneTest") 
+//			 {	
+//			 	
+//			 	AfficherClassName();  
+//				AfficherAttributes();  
+//				AfficherMethods();	   
+//				AfficherChamps();      
+//			 	AfficherConstructor();
+//			 	
+//			 }  
+//			 else if (TextboxStart.Text == "")
+//			 	Response.Write("");
+//			else 
+//				Response.Write("tu as a mal saisi le nom"); %>
+//		</form>

@@ -8,11 +8,15 @@ namespace test1
 {
 	public class reflexion
 	{
+		public static string projetName;
+		public static string className;
+		
 		private static Type t = Assembly.GetExecutingAssembly().GetType();
 		
 		public static Type setGetType(string s1, string s2)
 		{
-				return Assembly.GetExecutingAssembly().GetType(s1+"."+s2);
+			t = Assembly.GetExecutingAssembly().GetType(s1+"."+s2);
+				return t;
 		
 		}
 		
@@ -37,9 +41,10 @@ namespace test1
 			
 		}
 			
-		public static string NomClasse() {
-		string className = t.Name;
-		return className;
+		public static string NomClasse() 
+		{
+			string className = t.Name;
+			return className;
 		}
 		
 		public static List<string> listAttributes(){

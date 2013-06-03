@@ -48,18 +48,19 @@
 			<% Response.Write("Rentrer le nom du projet :"); %>
 			<asp:TextBox id="TextboxProjet"  runat="server"/>
 			<asp:Button id="buttonProjet" Text="StartProjet" OnClick="buttonProjetClicked" runat="server"/>
+			<% Response.Write("<ul>");
+			 AfficherClasses(projetName); 
+			 Response.Write("</ul>"); %>
 		</form>
 		
 		<form id="form20" runat="server">
 			<% Response.Write("Rentrer le nom de la classe :"); %>
 			<asp:TextBox id="TextboxStart"  runat="server"/>
 			<asp:Button id="buttonStart" Text="Start" OnClick="buttonStartClicked" runat="server"/>
-		</form>	
-		
-		<form id="form22" runat="server">
-		<% if (TextboxStart.Text == "PersonneTest") 
+			<% Response.Write("<ul>");
+			 if (TextboxStart.Text != "") 
 			 {	
-			 	//AfficherClasses();
+			 	
 			 	AfficherClassName();  
 				AfficherAttributes();  
 				AfficherMethods();	   
@@ -70,8 +71,14 @@
 			 else if (TextboxStart.Text == "")
 			 	Response.Write("");
 			else 
-				Response.Write("tu as a mal saisi le nom"); %>
-		</form>
+				Response.Write("tu as a mal saisi le nom"); 
+			 Response.Write("</ul>"); %>
+		</form>	
+		
+		<form id="form40" runat="server">
+			
+		</form>	
+		
 		
 	<form id="form1" action="Create.aspx" runat="server">
 		<asp:Button id="button1" runat="server" Text="create" OnClick="button1Clicked" />
@@ -87,10 +94,6 @@
 		<asp:Label id="outputlabel3" runat="server" />
 	</form>
 		
-		<form id="form4" runat="server">
-			<asp:Button id="button4" runat="server" Text="retour" OnClick="button4Clicked" />
-			<asp:Label id="outputlabel4" runat="server"/>
-		</form>
 </body>
 </html>
 

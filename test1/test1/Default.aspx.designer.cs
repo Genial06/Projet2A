@@ -31,7 +31,7 @@ namespace test1 {
 		
 		protected System.Web.UI.WebControls.Button buttonStart;
 		
-		protected System.Web.UI.HtmlControls.HtmlForm form22;
+		protected System.Web.UI.HtmlControls.HtmlForm form40;
 		
 		protected System.Web.UI.HtmlControls.HtmlForm form1;
 		
@@ -48,11 +48,5 @@ namespace test1 {
 		protected System.Web.UI.WebControls.Button button3;
 		
 		protected System.Web.UI.WebControls.Label outputlabel3;
-		
-		protected System.Web.UI.HtmlControls.HtmlForm form4;
-		
-		protected System.Web.UI.WebControls.Button button4;
-		
-		protected System.Web.UI.WebControls.Label outputlabel4;
 	}
 }
