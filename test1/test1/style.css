@@ -1,5 +1,11 @@
-body,div{
-	
-
-     		
+body{
+		 
+		 margin:0;
+         padding:0;
+		 color:white;
+         background-color:white;
+         background:url('green_background.png')no-repeat center center fixed; 
+         background-size: cover; 
+        
+         
 }
