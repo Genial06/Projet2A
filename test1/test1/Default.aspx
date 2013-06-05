@@ -77,9 +77,6 @@
 			 Response.Write("</ul>"); %>
 		</form>	
 		
-		<form id="form40" runat="server">
-			
-		</form>	
 		
 		
 	<form id="form1" runat="server">
@@ -87,12 +84,12 @@
 	</form>
 		
 	<form id="form2" action="Read.aspx" runat="server">
-		<asp:Button id="button2" runat="server" Text="read" OnClick="button2Clicked" />
+		<asp:Button id="button2" runat="server" Text="read"  />
 		<asp:Label id="outputlabel2" runat="server" />
 	</form>
 		
 	<form id="form3" action="Update.aspx" runat="server">
-		<asp:Button id="button3" runat="server" Text="update" OnClick="button3Clicked" />
+		<asp:Button id="button3" runat="server" Text="update"  />
 		<asp:Label id="outputlabel3" runat="server" />
 	</form>
 		
