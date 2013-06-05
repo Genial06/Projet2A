@@ -30,8 +30,8 @@
 		<asp:Label id="outputlabelTest" runat="server"/>
 	</form>
 		
-		<form id="form11" action="Default.aspx" runat="server">
-		<asp:Button id="buttonRetour" runat="server" Text="retour" OnClick="buttonRetourClicked" />
+		<form id="form11"  runat="server">
+		<asp:Button id="buttonRetour" runat="server" Text="retour" PostBackUrl="~/Default.aspx" />
 		<asp:Label id="outputlabelRetour" runat="server"/>
 		
 	</form>
