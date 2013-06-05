@@ -42,6 +42,7 @@
     <Content Include="Create.aspx" />
     <Content Include="Read.aspx" />
     <Content Include="Update.aspx" />
+    <Content Include="style.css" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">

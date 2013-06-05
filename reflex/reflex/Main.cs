@@ -74,7 +74,7 @@ namespace reflex
 			string  s = Console.ReadLine();
 			if (GetClasses("reflex").Contains(s) == true){	
 					
-			 t = Assembly.GetExecutingAssembly().GetType("reflex."+s);
+			 t = Assembly.GetExecutingAssembly().GetType(s1+"."+s);
 			Console.WriteLine(t.FullName);}
 			
 			else {
@@ -132,12 +132,13 @@ namespace reflex
 					
 					Console.WriteLine("Veuillez choisir l'une de ces méthodes");
 					string str = Console.ReadLine();
-					objType.GetMethods(str);
+					//objType.GetMethods(str);
 					 object objInstanceDynamique = System.Activator.CreateInstance(objType);
 					
 	
 	                // Casting de l'objet
 	                Personne_ objPersonne = objInstanceDynamique as Personne_;
+					objPersonne.ToString();
 					
 					objPersonne.personne_(1,"ryad","kacimi",24);
 						
