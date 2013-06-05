@@ -80,16 +80,16 @@
 		
 		
 	<form id="form1" runat="server">
-		<asp:Button id="button1" runat="server" Text="create" OnClick="button1Clicked" PostBackUrl="~/Create.aspx" />
+		<asp:Button id="button1" runat="server" Text="create" PostBackUrl="~/Create.aspx" />
 	</form>
 		
-	<form id="form2" action="Read.aspx" runat="server">
-		<asp:Button id="button2" runat="server" Text="read"  />
+	<form id="form2" runat="server">
+		<asp:Button id="button2" runat="server" Text="read" PostBackUrl="~/Read.aspx" />
 		<asp:Label id="outputlabel2" runat="server" />
 	</form>
 		
-	<form id="form3" action="Update.aspx" runat="server">
-		<asp:Button id="button3" runat="server" Text="update"  />
+	<form id="form3" runat="server">
+		<asp:Button id="button3" runat="server" Text="update" PostBackUrl="~/Update.aspx" />
 		<asp:Label id="outputlabel3" runat="server" />
 	</form>
 		

@@ -12,14 +12,14 @@
 
 
 		
-		<form id="form1" action="Create.aspx" runat="server">
-			<asp:Button id="button1" runat="server" Text="create" OnClick="button1Clicked" />
+		<form id="form1" runat="server">
+			<asp:Button id="button1" runat="server" Text="create" PostBackUrl="~/Create.aspx" />
 		</form>
-		<form id="form2" action="Update.aspx" runat="server">
-			<asp:Button id="button2" runat="server" Text="Update" OnClick="button2Clicked" />
+		<form id="form2" runat="server">
+			<asp:Button id="button2" runat="server" Text="Update" PostBackUrl="~/Update.aspx" />
 		</form>
-		<form id="form3" action="Default.aspx" runat="server">
-			<asp:Button id="buttonRetour" runat="server" Text="retour" OnClick="buttonRetourClicked" />
+		<form id="form3" runat="server">
+			<asp:Button id="buttonRetour" runat="server" Text="retour" PostBackUrl="~/Default.aspx" />
 		</form>
 </body>
 </html>
