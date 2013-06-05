@@ -34,9 +34,11 @@
 	<title>
 		<% 	AfficherTitre(); %>	
 	</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-
+<body> 
+<style type="text/css" media="screen">		
+			</style>
 		<form id="form21" runat="server">
 			<% Response.Write("Rentrer le path du projet :"); %>
 				<input id="TextboxBegin" runat="server" type="file">
@@ -77,8 +79,8 @@
 		
 		
 		
-	<form id="form1" action="Create.aspx" runat="server">
-		<asp:Button id="button1" runat="server" Text="create"  />
+	<form id="form1" runat="server">
+		<asp:Button id="button1" runat="server" Text="create" OnClick="button1Clicked" PostBackUrl="~/Create.aspx" />
 	</form>
 		
 	<form id="form2" action="Read.aspx" runat="server">

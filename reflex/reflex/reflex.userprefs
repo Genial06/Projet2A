@@ -1,10 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="reflex/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs">
     <Files>
-      <File FileName="reflex/Main.cs" Line="156" Column="3" />
-      <File FileName="reflex/Personne_.cs" Line="12" Column="9" />
-      <File FileName="reflex/test.cs" Line="1" Column="1" />
+      <File FileName="Main.cs" Line="77" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

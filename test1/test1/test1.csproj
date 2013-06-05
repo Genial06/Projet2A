@@ -41,7 +41,11 @@
     <Content Include="Default.aspx" />
     <Content Include="Read.aspx" />
     <Content Include="Update.aspx" />
+<<<<<<< HEAD
     <Content Include="Create.aspx" />
+=======
+    <Content Include="style.css" />
+>>>>>>> f4d0a38cad781966715e9c1316f65f6f3996e6d7
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">

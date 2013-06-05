@@ -8,6 +8,7 @@ using System.IO;
 
 namespace test1
 {
+	
 	public partial class Default : System.Web.UI.Page
 	{	
 		public static string fichier;
@@ -148,11 +149,7 @@ namespace test1
 			}
 			Response.Write("</ul>");
 		}
-		
-		
-	
 	}
-
 }
 
 
