@@ -27,14 +27,12 @@
 		
 		<form id="form10" runat="server">
 		<asp:Button id="buttonTest" runat="server" Text="test" OnClick="buttonTestClicked" />
-		<asp:Label id="outputlabelTest" runat="server"/>
-	</form>
-		
-		<form id="form11"  runat="server">
+			<br/>
 		<asp:Button id="buttonRetour" runat="server" Text="retour" PostBackUrl="~/Default.aspx" />
-		<asp:Label id="outputlabelRetour" runat="server"/>
+		<asp:Label id="outputlabelTest" runat="server"/>
+		</form>
 		
-	</form>
+
 		
 	</body>
 </html>

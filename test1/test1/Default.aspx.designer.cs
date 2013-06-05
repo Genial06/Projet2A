@@ -35,16 +35,8 @@ namespace test1 {
 		
 		protected System.Web.UI.WebControls.Button button1;
 		
-		protected System.Web.UI.HtmlControls.HtmlForm form2;
-		
 		protected System.Web.UI.WebControls.Button button2;
 		
-		protected System.Web.UI.WebControls.Label outputlabel2;
-		
-		protected System.Web.UI.HtmlControls.HtmlForm form3;
-		
 		protected System.Web.UI.WebControls.Button button3;
-		
-		protected System.Web.UI.WebControls.Label outputlabel3;
 	}
 }
