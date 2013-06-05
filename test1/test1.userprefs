@@ -2,14 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="test1/Default.aspx">
     <Files>
-      <File FileName="test1/Default.aspx" Line="28" Column="1" />
-      <File FileName="test1/Default.aspx.cs" Line="131" Column="59" />
-      <File FileName="test1/Create.aspx" Line="13" Column="47" />
-      <File FileName="test1/Create.aspx.cs" Line="13" Column="26" />
-      <File FileName="test1/Read.aspx" Line="13" Column="1" />
-      <File FileName="test1/Read.aspx.cs" Line="13" Column="62" />
-      <File FileName="test1/Update.aspx" Line="9" Column="8" />
-      <File FileName="test1/Update.aspx.cs" Line="15" Column="19" />
+      <File FileName="test1/Default.aspx" Line="81" Column="60" />
+      <File FileName="test1/Default.aspx.cs" Line="183" Column="6" />
+      <File FileName="test1/reflexion.cs" Line="8" Column="2" />
+      <File FileName="test1/Read.aspx" Line="17" Column="10" />
+      <File FileName="test1/Read.aspx.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

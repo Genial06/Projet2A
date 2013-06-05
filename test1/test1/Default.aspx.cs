@@ -179,3 +179,5 @@ namespace test1
 //			else 
 //				Response.Write("tu as a mal saisi le nom"); %>
 //		</form>
+
+//OnClick="button3Clicked"
