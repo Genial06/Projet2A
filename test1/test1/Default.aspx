@@ -43,79 +43,12 @@
 <style type="text/css" media="screen">		
 			</style>
 		<div id="letter-container" class="letter-container">
-    		<h2><a href="#">C#</a></h2>
-    		<h2><a href="#">HTML</a></h2>
+    		<h2><a href="#" style="left: 200px;">C#</a></h2>
+		
+    		<h2><a href="#" style="left: 550px;">HTML</a></h2>
 		</div>
-		<h2>
-		Bienvenue sur l'outil KaciVer 
-		</h2>
-		<p> L'outil Kaciver est un générateur de pages Web à partir de votre code c#,<br/>il vous permetteras de visualiser toute les informations contenu dans votre projet<br/> de maniére intuitive de rajouté ou modifié vos instance via une statégie qui se base sur la refléxivité
-			</p>
-		<p id="mono">
-            <img src="mono.png" alt="Mono" />
-		</p>
-		<p id="ubuntu">
-            <img src="ubuntu-logo.png" alt="Mono" />
-		</p>
 		
-					
-		
-		
-		
-		
-		<!--<form id="form21" runat="server">
-			<% //Response.Write("Rentrer le path du projet :"); %>
-				<input id="TextboxBegin" runat="server" type="file">
-				</input>
-			<asp:Button id="buttonBegin" Text="begin" OnClick="buttonBeginClicked" runat="server"/>
-		</form>			
-		
-		-->
-		<div class="blocprincipal">
-		<form id="form30" runat="server">
-			<h3><% Response.Write("Rentrer le nom du projet :"); %></h3>
-			<asp:TextBox id="TextboxProjet"  runat="server"/>
-			<asp:Button id="buttonProjet" Text="StartProjet" OnClick="buttonProjetClicked" runat="server"/>
-			<% Response.Write("<ul>");
-			 AfficherClasses(projetName); 
-			 Response.Write("</ul>"); %>
-		</form>
-		
-		<form id="form20" runat="server">
-			<h3><% Response.Write("Rentrer le nom de la classe :"); %></h3>
-			<asp:TextBox id="TextboxStart"  runat="server"/>
-			<asp:Button id="buttonStart" Text="Start" OnClick="buttonStartClicked" runat="server"/>
-			<% Response.Write("<ul>");
-			 if (TextboxStart.Text != "") 
-			 {	
-			 	
-			 	AfficherClassName();  
-				AfficherAttributes();  
-				AfficherMethods();	   
-				AfficherChamps();      
-			 	AfficherConstructor();
-			 	
-			 }  
-			 else if (TextboxStart.Text == "")
-			 	Response.Write("");
-			else 
-				Response.Write("tu as a mal saisi le nom"); 
-			 Response.Write("</ul>"); %>
-		</form>	
-		
-		
-		
-	<form id="form1" runat="server">
-			<h3><% Response.Write("Veuillez créer des Instances :"); %></h3>
-		<asp:Button id="button1" runat="server" Text="create" PostBackUrl="~/Create.aspx" />
-			<br/>
-		<asp:Button id="button2" runat="server" Text="read" PostBackUrl="~/Read.aspx" />
-			<br/>
-		<asp:Button id="button3" runat="server" Text="update" PostBackUrl="~/Update.aspx" />
-	</form>
-	
-		</div>
-		<ul id="navigationMenu">
+		<ul id="navigationMenu" style="margin: -250px 0px 0px 550px;">
 			    <li>
 			        <a class="home" href="page2.html">
 			            <span>Home</span>
@@ -148,6 +81,83 @@
 			        </a>
 			    </li>
 			</ul>
+		<h2>
+		Bienvenue sur l'outil VerKaci 
+		</h2>
+		
+		<h4 style="padding: 20px 50px 0px 150px; border-width: 3px; margin: 0px 510px 0px 540px; height: 96px;">
+		L'outil Kaciver est un générateur de pages Web à partir de votre code c#,<br/>il vous permettra de visualiser toute les informations contenu dans votre projet,<br/> de maniére intuitive de rajouté ou modifié vos instance via une statégie qui se base sur la refléxivité.
+		</h4>
+		<p id="mono">
+            <img src="mono.png" alt="Mono" />
+		</p>
+		<p id="ubuntu">
+            <img src="ubuntu-logo.png" alt="Mono" />
+		</p>
+		
+		
+					
+		
+		
+		
+		
+		<!--<form id="form21" runat="server">
+			<% //Response.Write("Rentrer le path du projet :"); %>
+				<input id="TextboxBegin" runat="server" type="file">
+				</input>
+			<asp:Button id="buttonBegin" Text="begin" OnClick="buttonBeginClicked" runat="server"/>
+		</form>			
+		
+		-->
+		<div class="blocprincipal">
+		<form id="form30" runat="server">
+		
+			<h3 style="margin-top: 12px;"><% Response.Write("Rentrer le nom du projet :"); %></h3>
+			<asp:TextBox id="TextboxProjet"  runat="server" style="margin-top: 12px; padding-top: 0px; border-top-width: 2px;"/>
+			<asp:Button id="buttonProjet" Text="StartProjet" OnClick="buttonProjetClicked" runat="server" style="margin-left: 60px;"/>
+			<% Response.Write("<ul>");
+			 AfficherClasses(projetName); 
+			 Response.Write("</ul>"); %>
+		</form>
+		
+		<form id="form20" runat="server">
+	
+			<h3 style="margin-top: 12px; margin-bottom: 12px;"><% Response.Write("Rentrer le nom de la classe :"); %></h3>
+			<asp:TextBox id="TextboxStart"  runat="server"/>
+			
+			<asp:Button id="buttonStart" Text="Start" OnClick="buttonStartClicked" runat="server" style="margin-left: 60px;"/>
+			<% Response.Write("<ul>");
+			 if (TextboxStart.Text != "") 
+			 {	
+			 	
+			 	AfficherClassName();  
+				AfficherAttributes();  
+				AfficherMethods();	   
+				AfficherChamps();      
+			 	AfficherConstructor();
+			 	
+			 }  
+			 else if (TextboxStart.Text == "")
+			 	Response.Write("");
+			else 
+				Response.Write("tu as a mal saisi le nom"); 
+			 Response.Write("</ul>"); %>
+		</form>	
+		
+		
+		
+	<form id="form1" runat="server">
+			<h3><% Response.Write("Veuillez créer des Instances :"); %></h3>
+		<asp:Button id="button1" runat="server" Text="create" PostBackUrl="~/Create.aspx" style="margin-top: 12px; margin-bottom: 12px;" />
+			<br/>
+			
+		<asp:Button id="button2" runat="server" Text="read" PostBackUrl="~/Read.aspx" style="margin-top: 12px; margin-bottom: 12px;"/>
+			<br/>
+		<asp:Button id="button3" runat="server" Text="update" PostBackUrl="~/Update.aspx" style="margin-top: 12px; margin-bottom: 12px;"/>
+	</form>
+	
+		</div>
+		
 </body>
 </html>
 
