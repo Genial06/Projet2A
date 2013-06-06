@@ -13,12 +13,6 @@ namespace test1 {
 	
 	public partial class Default {
 		
-		protected System.Web.UI.HtmlControls.HtmlForm form21;
-		
-		protected System.Web.UI.HtmlControls.HtmlInputFile TextboxBegin;
-		
-		protected System.Web.UI.WebControls.Button buttonBegin;
-		
 		protected System.Web.UI.HtmlControls.HtmlForm form30;
 		
 		protected System.Web.UI.WebControls.TextBox TextboxProjet;

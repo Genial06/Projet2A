@@ -17,7 +17,7 @@ namespace test1
 		
 		public virtual void buttonBeginClicked (object sender, EventArgs args)
 		{
-			System.Console.Write(TextboxBegin.Value);
+			//System.Console.Write(TextboxBegin.Value);
 			//string fichier = TextboxBegin.Value.ToString();
 			
 		}

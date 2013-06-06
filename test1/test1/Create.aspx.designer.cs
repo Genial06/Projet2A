@@ -15,10 +15,10 @@ namespace test1 {
 		
 		protected System.Web.UI.HtmlControls.HtmlForm form10;
 		
-		protected System.Web.UI.WebControls.Button buttonTest;
+		protected System.Web.UI.WebControls.Button buttonCreer;
 		
 		protected System.Web.UI.WebControls.Button buttonRetour;
 		
-		protected System.Web.UI.WebControls.Label outputlabelTest;
+		protected System.Web.UI.WebControls.Label outputlabelCreer;
 	}
 }

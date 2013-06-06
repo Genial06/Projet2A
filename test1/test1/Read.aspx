@@ -6,6 +6,7 @@
 <html>
 <head runat="server">
 	<title>Read</title>
+		<link href="style.css" rel="stylesheet" type='text/css' media='all' />
 	
 </head>
 <body>

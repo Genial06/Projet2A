@@ -6,6 +6,7 @@
 <html>
 <head runat="server">
 	<title>Update</title>
+		<link href="style.css" rel="stylesheet" type='text/css' media='all' />
 </head>
 <body>
 	<form id="form1" action="Create.aspx" runat="server">

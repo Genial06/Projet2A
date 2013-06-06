@@ -19,6 +19,7 @@
 <html>
 	<head>
 		<title>testCreate</title>
+		<link href="style.css" rel="stylesheet" type='text/css' media='all' />
 	</head>
 	<body>
 		
@@ -26,10 +27,10 @@
 		<li>	<%	AfficherAttributs();	%></li>
 		
 		<form id="form10" runat="server">
-		<asp:Button id="buttonTest" runat="server" Text="test" OnClick="buttonTestClicked" />
+		<asp:Button id="buttonCreer" runat="server" Text="creer" OnClick="buttonCreerClicked" />
 			<br/>
 		<asp:Button id="buttonRetour" runat="server" Text="retour" PostBackUrl="~/Default.aspx" />
-		<asp:Label id="outputlabelTest" runat="server"/>
+		<asp:Label id="outputlabelCreer" runat="server"/>
 		</form>
 		
 
