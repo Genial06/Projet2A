@@ -27,9 +27,8 @@ namespace reflex
 	            return null ;
 	        }*/
 
-		
-		 private static string instanceSpec = "System.EventArgs;System.Random;" +
-        "System.Exception;System.Object;System.Version";
+
+	
 		
 		static List<string> GetClasses(string nameSpace)
 	    {
@@ -134,12 +133,9 @@ namespace reflex
 					string str = Console.ReadLine();
 					//objType.GetMethods(str);
 					 object objInstanceDynamique = System.Activator.CreateInstance(objType);
-					
-	
-	                // Casting de l'objet
+					 // Casting de l'objet
 	                Personne_ objPersonne = objInstanceDynamique as Personne_;
-					objPersonne.ToString();
-					
+														
 					objPersonne.personne_(1,"ryad","kacimi",24);
 						
 			foreach(MemberInfo Mi in t.GetMembers())
@@ -152,10 +148,7 @@ namespace reflex
 					   if (Mi.ToString().Contains(Console.ReadLine()) == true)
 									
 						 Console.WriteLine(	objPersonne.getAge().ToString());
-						
-							
-						
-					
+			
 	            else
 	            {
 	                System.Console.WriteLine("Le type semble être incorrect!");

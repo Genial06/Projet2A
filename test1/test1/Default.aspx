@@ -27,25 +27,19 @@
 
 	
 </script>
-		
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head run="server">
-	<title>
-		<% 	AfficherTitre(); %>	
-	</title>
+	<title><% 	AfficherTitre(); %></title>
 		<link href="styles.css" rel="stylesheet" type='text/css' media='all' />
 		<link href="style.css" rel="stylesheet" type='text/css' media='all' />
 		<link href="style1.css" rel="stylesheet" type='text/css' media='all' />
 		
-		
 </head>
-<div id ="global">	
+
 <body> 
-<style type="text/css" media="screen">		
-			</style>
-		
-		
+<div id ="global">			
+
 		<div id="letter-container" class="letter-container">
     		<h2><a href="#" style="left: 200px;">C#</a></h2>
 		
@@ -54,7 +48,8 @@
 		
 		<ul id="navigationMenu" style="margin: -250px 0px 0px 550px;">
 			    <li>
-			        <a class="home" href="page2.html">
+				
+			        <a class="home" href="Leonard et Ryad.html" >
 			            <span>Home</span>
 						
 			        </a>
@@ -161,9 +156,8 @@
 	</form>
 	
 		</div>
-		
-</body>
-</div>	
-</html>
+	</div>	
+		</body>
+	</html>
 
 

@@ -15,11 +15,13 @@
 	}
 	
 </script>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
-	<head>
+	<head run="server">
 		<title>testCreate</title>
+		<link href="styles.css" rel="stylesheet" type='text/css' media='all' />
 		<link href="style.css" rel="stylesheet" type='text/css' media='all' />
+		<link href="style1.css" rel="stylesheet" type='text/css' media='all' />
 	</head>
 	<body>
 		

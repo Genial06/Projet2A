@@ -25,6 +25,7 @@ namespace test1
 		public virtual void buttonProjetClicked (object sender, EventArgs args)
 		{
 			System.Console.Write(TextboxProjet.Text);
+			
 			projetName = TextboxProjet.Text;
 			
 			//AfficherClasses(projetName);
