@@ -141,6 +141,7 @@ h1{
 h2{
 	font-weight:normal;
 	text-align:center;
+	color : #F98D35;
 }
 
 h1,h2{
@@ -167,3 +168,9 @@ p.note{
 	text-align:center;
 	margin:50px;
 }
+h4 {
+ margin-top: 5px; border-bottom-width: 5px; margin-bottom: 5px; border-top-width: 5px;
+ color:#F98D35; 
+
+ }
+ 

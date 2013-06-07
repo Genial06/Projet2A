@@ -34,14 +34,18 @@
 	<title>
 		<% 	AfficherTitre(); %>	
 	</title>
-		<link href="style1.css" rel="stylesheet" type='text/css' media='all' />
-		<link href="style.css" rel="stylesheet" type='text/css' media='all' />
 		<link href="styles.css" rel="stylesheet" type='text/css' media='all' />
+		<link href="style.css" rel="stylesheet" type='text/css' media='all' />
+		<link href="style1.css" rel="stylesheet" type='text/css' media='all' />
+		
 		
 </head>
+<div id ="global">	
 <body> 
 <style type="text/css" media="screen">		
 			</style>
+		
+		
 		<div id="letter-container" class="letter-container">
     		<h2><a href="#" style="left: 200px;">C#</a></h2>
 		
@@ -82,12 +86,12 @@
 			    </li>
 			</ul>
 		<h2>
-		Bienvenue sur l'outil VerKaci 
+		Bienvenue sur l'outil VerKaTool 
 		</h2>
 		
-		<h4 style="padding: 20px 50px 0px 150px; border-width: 3px; margin: 0px 510px 0px 540px; height: 96px;">
-		L'outil Kaciver est un générateur de pages Web à partir de votre code c#,<br/>il vous permettra de visualiser toute les informations contenu dans votre projet,<br/> de maniére intuitive de rajouté ou modifié vos instance via une statégie qui se base sur la refléxivité.
-		</h4>
+		<h3 style="padding: 20px 50px 0px 150px; border-width: 3px; margin: 0px 510px 0px 540px; height: 96px;">
+		L'outil VerKaTool est un générateur de pages Web à partir de votre code c#,<br/>il vous permettra de visualiser toute les informations contenu dans votre projet,<br/> de maniére intuitive de rajouté ou modifié vos instance via une statégie qui se base sur la refléxivité.
+		</h3>
 		<p id="mono">
             <img src="mono.png" alt="Mono" />
 		</p>
@@ -159,6 +163,7 @@
 		</div>
 		
 </body>
+</div>	
 </html>
 
 

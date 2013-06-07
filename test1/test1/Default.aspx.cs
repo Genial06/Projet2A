@@ -73,7 +73,8 @@ namespace test1
 		{
 			if (projetName != "")
 			{	
-				Response.Write("Liste des classes du projet :");
+				
+				Response.Write("<h4> Liste des classes du projet :</h4> ");
 				List<string> l = reflexion.GetClasses(s);
 				Response.Write("<ul>");
 				foreach (string j in l)
@@ -88,7 +89,7 @@ namespace test1
 		
 		public virtual void AfficherClassName() 
 		{ 	
-			Response.Write("Nom de la classe :");
+			Response.Write("<h4> Nom de la classe :</h4> ");
 			string str = reflexion.NomClasse();
 			Response.Write("<ul>");		
 			Response.Write(string.Format("<li> {0} </li>",str));
@@ -97,16 +98,16 @@ namespace test1
 		
 		public virtual void AfficherAttributes() 
 		{ 
-			Response.Write("Liste d'attributs :");
+			Response.Write("<h4> Liste d'attributs :</h4> ");
 			List<string> l = reflexion.listAttributes();
 			Response.Write("<ul>");
 			foreach (string j in l)
 				{
 				    Response.Write(string.Format ("<li> {0} ",j));
-					Response.Write(String.Format("<button> Read </button> "));
+					//Response.Write(String.Format("<button> Read </button> "));
 					
-					Response.Write(String.Format("<button> Update </button> "));
-					Response.Write(String.Format("<button> Delete </button> </li>"));
+					//Response.Write(String.Format("<button> Update </button> "));
+					//Response.Write(String.Format("<button> Delete </button> </li>"));
 					 
 				}	
 				 Response.Write("</ul>");
@@ -118,7 +119,7 @@ namespace test1
 		
 		public virtual void AfficherMethods()
 		{
-			Response.Write("Liste de Methodes :");
+			Response.Write("<h4> Liste de Methodes :</h4>");
 			List<string> l = reflexion.listMethods();
 			Response.Write("<ul>");
 			foreach (string j in l)
@@ -129,7 +130,7 @@ namespace test1
 		}
 			public virtual void AfficherChamps()
 		{
-			Response.Write("Liste de Champs :");
+			Response.Write("<h4> Liste de Champs : </h4>");
 			List<string> l = reflexion.listChamps();
 			Response.Write("<ul>");
 			foreach (string j in l)
@@ -140,7 +141,7 @@ namespace test1
 		}
 		public virtual void AfficherConstructor()
 		{
-			Response.Write("Liste de Constructeur :");
+			Response.Write("<h4> Liste de Constructeur : </h4> ");
 			List<string> l = reflexion.listConstructor();
 			Response.Write("<ul>");
 			foreach (string j in l)
