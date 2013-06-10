@@ -5,9 +5,14 @@
 	
 }
 
+#global {
+width:2000px;
+
+ }
+ 
 body{
 	font-size:14px;
-	
+	width:2000px;
 	
 	/* CSS3 Radial Gradients */
 	

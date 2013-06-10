@@ -1,13 +1,10 @@
 
-
 #global {
-width:100%;
+width:2000px;
 min-width:100%;
  }
- 
- 
 div.blocprincipal{
-
+width:2000px;
  width:800px;
    margin-left: auto;
   margin-right: auto;
@@ -36,7 +33,8 @@ border: 0px dotted black;
 /* Balises par defauts */
 
 
-body{   
+body{  
+         width:2000px;
 	     margin:0;
          padding:0;
 		 color:white;

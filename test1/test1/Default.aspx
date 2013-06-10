@@ -3,6 +3,7 @@
 <script language="C#" runat="server">
 
 
+	
 
   void AfficherFirstname() 
 	{
@@ -38,7 +39,7 @@
 </head>
 
 <body> 
-<div id ="global">			
+<div id ="global" style = "width : 1900px;">			
 
 		<div id="letter-container" class="letter-container">
     		<h2><a href="#" style="left: 200px;">C#</a></h2>
@@ -75,7 +76,7 @@
 			    </li>
 			
 			    <li>
-			    	<a class="contact" href="page2.html">
+			    	<a class="contact" href="contact.html">
 			            <span>Contact us</span>
 			        </a>
 			    </li>

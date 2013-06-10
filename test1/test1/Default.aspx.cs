@@ -53,7 +53,7 @@ namespace test1
 		public virtual void button2Clicked (object sender, EventArgs args)
 		{
 //			object val = ViewState["ButtonClickCount2"];
-//		    int i = (val == null)? 1 : (int)val + 1;
+//		    int ilol = (val == null)? 1 : (int)val + 1;
 //		    outputlabel2.Text = string.Format ("You red {0} {1}", i, i==1?"time":"times");
 //		    ViewState["ButtonClickCount2"] = i;
 			

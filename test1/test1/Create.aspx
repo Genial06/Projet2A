@@ -1,18 +1,18 @@
 <%@ Page Language="C#" Inherits="test1.Create" %>
 <script language="C#" runat="server">
  
-	void AfficherClassName() { 
-		Response.Write("Classe : Personne");	
-	}
-	void AfficherAttributs() { 
+	//void AfficherClassName() { 
+		//Response.Write("Classe : Personne");	
+	//}
+	/*void AfficherAttributs() { 
 		Response.Write("Liste des attributs :");	
 		for (int i = 0; i<= 2; i=i+1)
 		{
 			Response.Write(string.Format ("<li> {0} : ",i)); 
-			Response.Write(String.Format("<input type=\"text\" placeholder=\"Saisissez l attribut\"> </input> "));
-			Response.Write(String.Format("<button> test </button> </li>"));// pour tester
+			Response.Write(string.Format("<input type=\"text\" placeholder=\"Saisissez l attribut\"> </input> "));
+			Response.Write(string.Format("<button> test </button> </li>"));// pour tester
 		}
-	}
+	}*/
 	
 </script>
 <!DOCTYPE html>
@@ -25,8 +25,12 @@
 	</head>
 	<body>
 		
-		<li>	<% 	AfficherClassName();	%></li>
-		<li>	<%	AfficherAttributs();	%></li>
+		<li>	<% 	AfficherClassName() ;	%></li>
+		<li>	<%				
+			AfficherAttributes() ;
+			// pour tester
+			
+				%></li>
 		
 		<form id="form10" runat="server">
 		<asp:Button id="buttonCreer" runat="server" Text="creer" OnClick="buttonCreerClicked" />

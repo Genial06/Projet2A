@@ -1,7 +1,12 @@
 
+#global {
+width:2000px;
+min-width:100%;
+ }
+ 
 
 .letter-container{
-
+	width:2000px;	
 	margin: 20px;
 	padding: 40px 10px;
 	text-align: center;
